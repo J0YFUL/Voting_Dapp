@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>투표예제 적용기</title>
+ <link href='https://fonts.googleapis.com/css?family=Open Sans:400,700' rel='stylesheet' type='text/css'>
+ <link href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+</head>
+<script src="https://cdn.jsdelivr.net/gh/ethereum/web3.js@1.0.0-beta.37/dist/web3.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="./index.js"></script>
+<body class="container">
+ <h1>블록체인 투표 예제</h1>
+ <div class="table-responsive">
+  <table class="table table-bordered">
+   <thead>
+    <tr>
+     <th>Candidate</th>
+     <th>Votes</th>
+    </tr>
+   </thead>
+   <tbody>
+    <tr>
+     <td>Seungwan</td>
+     <td id="candidate-1"></td>
+    </tr>
+    <tr>
+     <td>Seonje</td>
+     <td id="candidate-2"></td>
+    </tr>
+    <tr>
+     <td>Youngjun</td>
+     <td id="candidate-3"></td>
+    </tr>
+	<tr>
+     <td>Sungkwon</td>
+     <td id="candidate-4"></td>
+    </tr>
+	<tr>
+     <td>Jaewook</td>
+     <td id="candidate-5"></td>
+    </tr>
+   </tbody>
+  </table>
+ </div>
+ <input type="text" id="candidate" />
+ <a href="#" onclick="voteForCandidate()" class="btn btn-primary">Vote</a>
+</body>
+</html>
